@@ -12,7 +12,7 @@ touch /var/run/pritunl.pid
 
 /bin/rm /var/run/pritunl.pid
 
-/usr/bin/pritunl --daemon --pidfile /var/run/pritunl.pid
+/usr/bin/pritunl --start --pidfile /var/run/pritunl.pid
 
 [ "$1" ] && exec "$@"
 
